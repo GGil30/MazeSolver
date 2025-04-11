@@ -1,8 +1,11 @@
+// Gabriel Gil, April 10, March 2025
+
 /**
  * Creates a Maze made up of MazeCells
  * @author Ms. Namasivayam
  * @version 03/04/2022
  */
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -147,6 +150,8 @@ public class Maze {
      */
     public boolean isValidCell(int row, int col) {
         // TODO: Complete this function
+        // Check if the cell is valid to be explored. If the row or col is not on the grid, then the cell is invalid.
+        // If the cell is a wal or already explored, then it is also invalid to be explored
         if(row >= numRows || row < 0 || col < 0 || col >= numCols || mazeGrid[row][col].isWall() ||
                 mazeGrid[row][col].isExplored()){
             return false;

@@ -1,3 +1,5 @@
+// Gabriel Gil, April 10, March 2025
+
 /**
  * A class that represents a single cell of the maze.
  * @author Ms. Namasivayam
